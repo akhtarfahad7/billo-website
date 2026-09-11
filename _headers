@@ -13,3 +13,7 @@
 /og-image.svg
   Content-Type: image/svg+xml
   Cache-Control: public, max-age=86400
+
+/google122e0c6a0cba8ad0.html
+  Content-Type: text/html
+  Cache-Control: public, max-age=86400
