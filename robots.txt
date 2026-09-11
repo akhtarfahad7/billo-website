@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://billoapp.pages.dev/sitemap.xml

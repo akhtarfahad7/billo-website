@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6A1B9A;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4A148C;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="630" fill="url(#grad)"/>
+    <text x="600" y="200" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">BILLO</text>
+    <text x="600" y="280" font-family="Arial, sans-serif" font-size="36" fill="#FFD54F" text-anchor="middle">Business Buddy</text>
+    <text x="600" y="380" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">Pakistan ka Pehla Urdu POS System</text>
+    <text x="600" y="440" font-family="Arial, sans-serif" font-size="24" fill="#E0E0E0" text-anchor="middle">Bill banayein 30 seconds mein | Udhaar track karein | Inventory manage karein</text>
+    <text x="600" y="520" font-family="Arial, sans-serif" font-size="28" fill="#4CAF50" text-anchor="middle">Free Trial Available!</text>
+    <text x="600" y="580" font-family="Arial, sans-serif" font-size="20" fill="#BDBDBD" text-anchor="middle">billoapp.pages.dev</text>
+</svg>
