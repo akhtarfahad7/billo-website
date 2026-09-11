@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "include": [
+    "/robots.txt",
+    "/sitemap.xml",
+    "/favicon.svg",
+    "/og-image.svg"
+  ],
+  "exclude": [],
+  "routes": {}
+}
