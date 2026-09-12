@@ -315,7 +315,7 @@ const installSteps = document.getElementById('installSteps');
 
 if (installBtn) {
     installBtn.addEventListener('click', () => {
-        window.location.href = '/';
+        window.location.href = '/app/';
     });
 }
 
