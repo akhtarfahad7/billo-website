@@ -310,31 +310,18 @@ function notifyMe() {
 }
 
 // PWA Install
-let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
 const installSteps = document.getElementById('installSteps');
 
-window.addEventListener('beforeinstallprompt', e => {
-    e.preventDefault();
-    deferredPrompt = e;
-});
-
 if (installBtn) {
-    installBtn.addEventListener('click', async () => {
-        if (deferredPrompt) {
-            // PWA install available — show prompt
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            if (outcome === 'accepted') {
-                installBtn.textContent = 'Installed!';
-                installSteps.textContent = '';
-            }
-            deferredPrompt = null;
-        } else {
-            // No install prompt — open app in browser
-            window.open('/', '_blank');
-        }
+    installBtn.addEventListener('click', () => {
+        window.location.href = '/';
     });
+}
+
+// Detect if already installed as PWA
+if (window.matchMedia('(display-mode: standalone)').matches && installSteps) {
+    installSteps.textContent = 'BILLO is already installed on this device!';
 }
 
 // Register Service Worker
