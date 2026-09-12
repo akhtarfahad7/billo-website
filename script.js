@@ -317,12 +317,12 @@ const installSteps = document.getElementById('installSteps');
 window.addEventListener('beforeinstallprompt', e => {
     e.preventDefault();
     deferredPrompt = e;
-    installBtn.style.display = 'inline-flex';
 });
 
 if (installBtn) {
     installBtn.addEventListener('click', async () => {
         if (deferredPrompt) {
+            // PWA install available — show prompt
             deferredPrompt.prompt();
             const { outcome } = await deferredPrompt.userChoice;
             if (outcome === 'accepted') {
@@ -331,11 +331,8 @@ if (installBtn) {
             }
             deferredPrompt = null;
         } else {
-            // iOS or not supported — show manual steps
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            installSteps.textContent = isIOS
-                ? 'Tap Share > Add to Home Screen'
-                : 'Tap menu (3 dots) > Install App / Add to Home Screen';
+            // No install prompt — open app in browser
+            window.open('/', '_blank');
         }
     });
 }
