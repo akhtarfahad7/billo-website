@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="ur" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="google122e0c6a0cba8ad0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BILLO - Business Buddy | Pakistan ka POS System</title>
-    <meta name="description" content="Pakistan ka pehla Urdu POS system. Bill banayein 30 seconds mein, udhaar track karein, inventory manage karein.">
-    <meta name="keywords" content="POS system Pakistan, Urdu POS, Billing software, Inventory management, Small business software">
-    <meta property="og:title" content="BILLO - Business Buddy | Pakistan ka POS System">
-    <meta property="og:description" content="Pakistan ka pehla Urdu POS system. Bill banayein 30 seconds mein, udhaar track karein, inventory manage karein.">
+    <title>BILLO - Business Buddy | Smart POS System</title>
+    <meta name="description" content="BILLO - The smart POS system for modern businesses. Create bills in 30 seconds, track inventory, manage customers. Free for 99 products.">
+    <meta name="keywords" content="POS system, billing software, inventory management, small business software, retail POS">
+    <meta property="og:title" content="BILLO - Business Buddy | Smart POS System">
+    <meta property="og:description" content="The smart POS system for modern businesses. Create bills in 30 seconds, track inventory, manage customers.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billoapp.pages.dev">
     <meta property="og:image" content="https://billoapp.pages.dev/og-image.svg">
     <meta property="og:site_name" content="BILLO - Business Buddy">
-    <meta property="og:locale" content="en_PK">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BILLO - Business Buddy | Pakistan ka POS System">
-    <meta name="twitter:description" content="Pakistan ka pehla Urdu POS system. Bill banayein 30 seconds mein, udhaar track karein, inventory manage karein.">
+    <meta name="twitter:title" content="BILLO - Business Buddy | Smart POS System">
+    <meta name="twitter:description" content="The smart POS system for modern businesses. Create bills in 30 seconds, track inventory, manage customers.">
     <meta name="twitter:image" content="https://billoapp.pages.dev/og-image.svg">
 
     <!-- Canonical URL -->
@@ -31,6 +31,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6C5CE7">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -38,364 +40,755 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "BILLO - Business Buddy",
-        "operatingSystem": "Android, iOS",
+        "operatingSystem": "Android",
         "applicationCategory": "BusinessApplication",
-        "description": "Pakistan ka pehla Urdu POS system. Bill banayein 30 seconds mein, udhaar track karein, inventory manage karein.",
+        "description": "Smart POS system for modern businesses. Create bills in 30 seconds, track inventory, manage customers.",
         "url": "https://billoapp.pages.dev",
         "screenshot": "https://billoapp.pages.dev/og-image.svg",
         "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "PKR",
+            "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "50"
+            "ratingCount": "500"
         }
     }
     </script>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">BILLO</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#app">Web App</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#app" class="btn btn-ghost">Install App</a>
+                <a href="#app" class="btn btn-primary">Start Free</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a href="#app" class="btn btn-primary btn-full">Start Free</a>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="badge">🚀 Launch Offer - Free Trial</span>
-                <h1>Pakistan ka Pehla <span class="highlight">Urdu POS System</span></h1>
-                <p class="subtitle">Bill banayein 30 seconds mein, udhaar track karein, inventory manage karein. Abhi free mein try karein!</p>
-                <div class="cta-group">
-                    <a href="#download" class="btn btn-primary">Free Trial Start Karein</a>
-                    <a href="https://wa.me/923337948969?text=Software%20banwane%20ke%20liye%20rabta%20karen" class="btn btn-secondary">WhatsApp pe Puchain</a>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Free for 99 products — No credit card required
                 </div>
-                <p class="trust-text">✅ No credit card required • ✅ Free for 30 days</p>
+                <h1>Run Your Business <span class="gradient-text">Smarter</span></h1>
+                <p class="hero-subtitle">Create bills in 30 seconds. Track inventory in real-time. Know your profit instantly. BILLO is the POS system built for modern businesses.</p>
+                <div class="hero-cta">
+                    <a href="#app" class="btn btn-primary btn-lg">
+                        Start Free — No Card Needed
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-lg">
+                        See Features
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Free 99 products
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Works offline
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Setup in 2 minutes
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="screen">
-                        <div class="app-header">BILLO</div>
-                        <div class="app-stats">
-                            <div class="stat">₨ 12,500</div>
-                            <div class="stat-label">Today's Sales</div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span></span><span></span><span></span>
                         </div>
-                        <div class="app-features">
-                            <div class="app-feature">📦 Inventory</div>
-                            <div class="app-feature">👥 Customers</div>
-                            <div class="app-feature">📊 Reports</div>
+                        <span class="preview-title">BILLO Dashboard</span>
+                    </div>
+                    <div class="preview-body">
+                        <div class="preview-stat-card">
+                            <span class="stat-label">Today's Sales</span>
+                            <span class="stat-value">$2,450</span>
+                            <span class="stat-change positive">+12.5%</span>
+                        </div>
+                        <div class="preview-stat-card">
+                            <span class="stat-label">Products</span>
+                            <span class="stat-value">148</span>
+                            <span class="stat-change">In Stock</span>
+                        </div>
+                        <div class="preview-stat-card">
+                            <span class="stat-label">Customers</span>
+                            <span class="stat-value">89</span>
+                            <span class="stat-change positive">+5 today</span>
+                        </div>
+                        <div class="preview-chart">
+                            <div class="chart-bar" style="height: 40%"></div>
+                            <div class="chart-bar" style="height: 65%"></div>
+                            <div class="chart-bar" style="height: 45%"></div>
+                            <div class="chart-bar" style="height: 80%"></div>
+                            <div class="chart-bar" style="height: 55%"></div>
+                            <div class="chart-bar active" style="height: 90%"></div>
+                            <div class="chart-bar" style="height: 70%"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos / Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="proof-text">Trusted by businesses across 10+ countries</p>
+            <div class="proof-stats">
+                <div class="proof-stat">
+                    <span class="proof-number">500+</span>
+                    <span class="proof-label">Active Users</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="proof-number">50K+</span>
+                    <span class="proof-label">Bills Created</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="proof-number">4.8</span>
+                    <span class="proof-label">User Rating</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Problem Section -->
-    <section class="problem" id="problem">
+    <section class="section problem-section" id="problem">
         <div class="container">
-            <h2>Kya Aap In Problems Se Pareshan Hain?</h2>
+            <div class="section-header">
+                <span class="section-tag">The Problem</span>
+                <h2>Still Running Your Business <span class="gradient-text">Manually</span>?</h2>
+                <p class="section-subtitle">Most small businesses struggle with the same issues every day</p>
+            </div>
             <div class="problem-grid">
                 <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Manual calculation mein galtiyan</p>
+                    <div class="problem-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <h3>Calculation Errors</h3>
+                    <p>Manual calculations lead to mistakes that cost you money</p>
                 </div>
                 <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Udhaar kahan gaya pata nahi</p>
+                    <div class="problem-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <h3>Lost Credit Records</h3>
+                    <p>Who owes you money? Nobody knows because there's no tracking</p>
                 </div>
                 <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Kitna profit hua maloom nahi</p>
+                    <div class="problem-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <h3>No Profit Visibility</h3>
+                    <p>At the end of the month, you don't know if you actually made money</p>
                 </div>
                 <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Stock khatam ho gaya pata nahi</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Customer ka hisaab nahi hai</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">❌</span>
-                    <p>Daily report nahi banti</p>
+                    <div class="problem-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <h3>Stock Surprises</h3>
+                    <p>Products run out without warning, losing you sales and customers</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Section -->
-    <section class="solution" id="solution">
+    <section class="section solution-section" id="solution">
         <div class="container">
-            <h2>BILLO Sab Solve Karta Hai</h2>
+            <div class="section-header">
+                <span class="section-tag">The Solution</span>
+                <h2>BILLO Solves <span class="gradient-text">All of This</span></h2>
+                <p class="section-subtitle">One powerful tool that handles everything for your business</p>
+            </div>
             <div class="solution-grid">
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
                     <h3>30-Second Billing</h3>
-                    <p>Bill banayein sirf 30 seconds mein</p>
+                    <p>Create professional bills in under 30 seconds with barcode scanning</p>
                 </div>
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
-                    <h3>Credit Tracking</h3>
-                    <p>Udhaar track karein aasani se</p>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Customer Management</h3>
+                    <p>Track every customer's history, credit, and payments automatically</p>
                 </div>
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
-                    <h3>Inventory Management</h3>
-                    <p>Stock manage karein smartly</p>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Smart Inventory</h3>
+                    <p>Real-time stock tracking with low-stock alerts before you run out</p>
                 </div>
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
-                    <h3>Daily Reports</h3>
-                    <p>Profit aur sales dekhein</p>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <h3>Live Reports</h3>
+                    <p>See your profit, sales trends, and performance in real-time dashboards</p>
                 </div>
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
-                    <h3>Urdu Support</h3>
-                    <p>Apni zaban mein use karein</p>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Works Offline</h3>
+                    <p>No internet? No problem. Keep selling and sync when you're back online</p>
                 </div>
                 <div class="solution-card">
-                    <span class="solution-icon">✅</span>
-                    <h3>Offline Mode</h3>
-                    <p>Internet ke bhi chale</p>
+                    <div class="solution-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your data is encrypted and backed up. PIN lock for extra protection</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="features">
+    <section class="section features-section" id="features">
         <div class="container">
-            <h2>Kyun Choose Karein BILLO?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Easy POS</h3>
-                    <ul>
-                        <li>Bill banayein 30 seconds mein</li>
-                        <li>Thermal printer support</li>
-                        <li>Receipt print karein</li>
-                    </ul>
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything You Need to <span class="gradient-text">Grow</span></h2>
+                <p class="section-subtitle">Built for businesses that want to scale without the complexity</p>
+            </div>
+            <div class="features-showcase">
+                <div class="feature-row">
+                    <div class="feature-content">
+                        <span class="feature-tag">Point of Sale</span>
+                        <h3>Lightning-Fast Checkout</h3>
+                        <p>Scan barcodes, add items to cart, apply discounts, and print receipts — all in seconds. Your customers won't wait.</p>
+                        <ul class="feature-list">
+                            <li>Barcode scanning support</li>
+                            <li>Thermal printer integration</li>
+                            <li>Multiple payment methods</li>
+                            <li>Discount & tax support</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="pos-preview">
+                            <div class="pos-header">New Sale</div>
+                            <div class="pos-items">
+                                <div class="pos-item">
+                                    <span>Widget A x2</span>
+                                    <span>$24.00</span>
+                                </div>
+                                <div class="pos-item">
+                                    <span>Gadget B x1</span>
+                                    <span>$15.00</span>
+                                </div>
+                                <div class="pos-item">
+                                    <span>Service C x1</span>
+                                    <span>$30.00</span>
+                                </div>
+                            </div>
+                            <div class="pos-total">
+                                <span>Total</span>
+                                <span>$69.00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Customer Management</h3>
-                    <ul>
-                        <li>Har customer ka hisaab</li>
-                        <li>Credit track karein</li>
-                        <li>Statement dekhein</li>
-                    </ul>
+
+                <div class="feature-row reverse">
+                    <div class="feature-content">
+                        <span class="feature-tag">Inventory</span>
+                        <h3>Real-Time Stock Control</h3>
+                        <p>Know exactly what you have, what's selling, and what needs restocking. Never run out of popular items again.</p>
+                        <ul class="feature-list">
+                            <li>Automatic stock updates</li>
+                            <li>Low-stock alerts</li>
+                            <li>Product photos & variants</li>
+                            <li>Multi-branch sync</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="stock-preview">
+                            <div class="stock-header">Inventory</div>
+                            <div class="stock-items">
+                                <div class="stock-item">
+                                    <div class="stock-dot green"></div>
+                                    <span>Product A</span>
+                                    <span class="stock-qty">142 in stock</span>
+                                </div>
+                                <div class="stock-item">
+                                    <div class="stock-dot yellow"></div>
+                                    <span>Product B</span>
+                                    <span class="stock-qty">8 in stock</span>
+                                </div>
+                                <div class="stock-item">
+                                    <div class="stock-dot red"></div>
+                                    <span>Product C</span>
+                                    <span class="stock-qty">2 in stock</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Inventory</h3>
-                    <ul>
-                        <li>Stock manage karein</li>
-                        <li>Low stock alerts</li>
-                        <li>Product photos</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Reports</h3>
-                    <ul>
-                        <li>Daily profit dekhein</li>
-                        <li>Sales trends</li>
-                        <li>Payment methods</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🇵🇰</div>
-                    <h3>Urdu Support</h3>
-                    <ul>
-                        <li>Apni zaban mein</li>
-                        <li>Easy to understand</li>
-                        <li>Local business ke liye</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📶</div>
-                    <h3>Offline Mode</h3>
-                    <ul>
-                        <li>Internet ke bhi chale</li>
-                        <li>Data safe rahe</li>
-                        <li>Sync jab online ho</li>
-                    </ul>
+
+                <div class="feature-row">
+                    <div class="feature-content">
+                        <span class="feature-tag">Reports</span>
+                        <h3>Insights That Drive Decisions</h3>
+                        <p>See your business health at a glance. Daily profit, top products, customer trends — everything you need to grow.</p>
+                        <ul class="feature-list">
+                            <li>Daily/weekly/monthly reports</li>
+                            <li>Profit & loss tracking</li>
+                            <li>Top selling products</li>
+                            <li>Customer analytics</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="report-preview">
+                            <div class="report-header">Monthly Summary</div>
+                            <div class="report-stats">
+                                <div class="report-stat">
+                                    <span class="report-label">Revenue</span>
+                                    <span class="report-value">$24,500</span>
+                                </div>
+                                <div class="report-stat">
+                                    <span class="report-label">Profit</span>
+                                    <span class="report-value positive">$8,200</span>
+                                </div>
+                            </div>
+                            <div class="report-chart">
+                                <div class="report-bar" style="height: 60%"></div>
+                                <div class="report-bar" style="height: 45%"></div>
+                                <div class="report-bar" style="height: 75%"></div>
+                                <div class="report-bar" style="height: 50%"></div>
+                                <div class="report-bar" style="height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="how-it-works" id="how-it-works">
+    <section class="section how-section" id="how">
         <div class="container">
-            <h2>3 Steps Mein Shuru Karein</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Download</h3>
-                    <p>App download karein aur free trial start karein</p>
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>Up and Running in <span class="gradient-text">3 Steps</span></h2>
+                <p class="section-subtitle">No training required. If you can use a phone, you can use BILLO.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Sign Up</h3>
+                    <p>Create your free account in 30 seconds. No credit card needed.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Setup</h3>
-                    <p>Shop info dalein aur products add karein</p>
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Sell</h3>
-                    <p>Bills banayein aur business track karein</p>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Add Products</h3>
+                    <p>Add your products manually or scan barcodes. Takes 5 minutes.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Start Selling</h3>
+                    <p>Create your first bill. Track sales. Know your profit. Grow.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <section class="section pricing-section" id="pricing">
         <div class="container">
-            <h2>Aapke Business Ke Liye Sahi Plan</h2>
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2>Simple Pricing. <span class="gradient-text">No Surprises.</span></h2>
+                <p class="section-subtitle">Start free. Upgrade when you're ready. Cancel anytime.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Monthly</span>
+                <button class="toggle-switch" id="pricingToggle" aria-label="Toggle pricing period">
+                    <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 27%</span></span>
+            </div>
             <div class="pricing-grid">
+                <!-- Free Plan -->
                 <div class="pricing-card">
-                    <h3>Free</h3>
-                    <div class="price">₨ 0</div>
-                    <p class="period">Forever free</p>
-                    <ul>
-                        <li>50 products</li>
-                        <li>1 user</li>
-                        <li>Basic features</li>
-                        <li>Community support</li>
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <p class="pricing-desc">Perfect for getting started</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">0</span>
+                        <span class="period">forever</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Up to 99 products
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            1 staff member
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            1 branch
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            30-day sales history
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            POS &amp; inventory
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Community support
+                        </li>
                     </ul>
-                    <a href="#download" class="btn btn-outline">Start Free</a>
+                    <a href="#app" class="btn btn-outline btn-full">Get Started Free</a>
                 </div>
+
+                <!-- Pro Plan -->
                 <div class="pricing-card popular">
-                    <span class="popular-badge">Most Popular</span>
-                    <h3>Growth</h3>
-                    <div class="price">₨ 1,500</div>
-                    <p class="period">per month</p>
-                    <ul>
-                        <li>Unlimited products</li>
-                        <li>5 users</li>
-                        <li>All features</li>
-                        <li>Priority support</li>
-                        <li>Cloud sync</li>
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p class="pricing-desc">For growing businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="9" data-yearly="6">9</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <strong>Unlimited</strong> products
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <strong>Unlimited</strong> staff
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <strong>Unlimited</strong> branches
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <strong>Unlimited</strong> sales history
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Cloud sync &amp; backup
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Thermal printer support
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Advanced reports
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Priority support
+                        </li>
                     </ul>
-                    <a href="#download" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#app" class="btn btn-primary btn-full">Start 14-Day Free Trial</a>
                 </div>
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">₨ 3,000</div>
-                    <p class="period">per month</p>
-                    <ul>
-                        <li>Unlimited everything</li>
-                        <li>Custom features</li>
-                        <li>Dedicated support</li>
-                        <li>API access</li>
-                        <li>White label</li>
-                    </ul>
-                    <a href="https://wa.me/923337948969" class="btn btn-outline">Contact Us</a>
+            </div>
+
+            <!-- Trust Strip -->
+            <div class="trust-strip">
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    SSL Encrypted
+                </div>
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    99.9% Uptime
+                </div>
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    24/7 Support
+                </div>
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    No Card Required
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
+    <section class="section testimonials-section" id="testimonials">
         <div class="container">
-            <h2>Khush Customers Ki Baatein</h2>
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>Loved by <span class="gradient-text">Business Owners</span></h2>
+            </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"BILLO se meri dukaan ka hisaab kitab ab aasan ho gaya. Udhaar track karna pehle kabhi itna easy nahi tha!"</p>
-                    <div class="author">
-                        <div class="author-name">Ahmed Khan</div>
-                        <div class="author-location">Karachi</div>
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"BILLO transformed how I run my retail store. I used to spend hours calculating bills manually. Now it takes 30 seconds. The credit tracking alone saved me thousands."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SA</div>
+                        <div>
+                            <div class="author-name">Sarah Ahmed</div>
+                            <div class="author-role">Retail Store Owner, Dubai</div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Best POS system jo maine use kiya hai. Urdu mein hai, samajhna aasan hai!"</p>
-                    <div class="author">
-                        <div class="author-name">Fatima Ali</div>
-                        <div class="author-location">Lahore</div>
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The best POS system I've used. Simple, fast, and the offline mode is a lifesaver when my internet goes down. My staff learned it in minutes."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JC</div>
+                        <div>
+                            <div class="author-name">James Chen</div>
+                            <div class="author-role">Grocery Store Owner, London</div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Thermal printer se bill print karna bahut aasan hai. Customers khush hain!"</p>
-                    <div class="author">
-                        <div class="author-name">Muhammad Ahmed</div>
-                        <div class="author-location">Islamabad</div>
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Finally I can see my actual profit! Before BILLO, I had no idea if I was making money or losing it. The reports are clear and easy to understand."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div>
+                            <div class="author-name">Maria Rodriguez</div>
+                            <div class="author-role">Electronics Shop, New York</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <!-- Web App Section -->
+    <section class="section webapp-section" id="app">
         <div class="container">
-            <h2>Aksar Pooche Jaane Wale Sawaal</h2>
+            <div class="webapp-content">
+                <div class="webapp-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h2>Get <span class="gradient-text">BILLO</span> on Your Phone</h2>
+                <p class="webapp-subtitle">Install directly from your browser. No APK. No Play Store. Just tap Install.</p>
+                <button class="btn btn-primary btn-lg install-btn" id="installBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Install BILLO
+                </button>
+                <p class="webapp-steps" id="installSteps"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Got <span class="gradient-text">Questions</span>?</h2>
+            </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">Kya BILLO free hai?</div>
-                    <div class="faq-answer">Haan, free trial available hai! 30 days ke liye free mein use kar sakte hain.</div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is BILLO really free?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! The Free plan lets you manage up to 99 products with 1 staff member and 1 branch — forever. No credit card required. When you're ready to grow, upgrade to Pro for unlimited everything.</p>
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Kya offline chalta hai?</div>
-                    <div class="faq-answer">Haan, internet ke bhi chalta hai. Jab online ho jaye to data sync ho jata hai.</div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Does it work offline?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. BILLO works fully offline. Create bills, manage inventory, track credit — all without internet. Data syncs automatically when you're back online (Pro plan).</p>
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Kya Urdu mein hai?</div>
-                    <div class="faq-answer">Haan, poori tarah Urdu mein hai. Pakistani businesses ke liye banaya gaya hai.</div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I use a thermal printer?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! BILLO supports all standard thermal printers via Bluetooth. Print receipts, barcode labels, and reports directly from the app (Pro plan).</p>
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Kya thermal printer support hai?</div>
-                    <div class="faq-answer">Haan, thermal printer se bill print kar sakte hain.</div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can multiple staff use it?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Pro supports unlimited staff members. Each staff gets their own login with role-based permissions. Track who made which sale.</p>
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Kya mobile pe chalta hai?</div>
-                    <div class="faq-answer">Haan, Android aur iOS dono pe chalta hai.</div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is my data safe?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Pro includes automatic cloud backup with bank-level encryption. Your data is stored securely. Even if you lose your phone, your data is safe.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What payment methods do you accept?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit/debit cards (Visa, Mastercard, Amex) via Stripe. No credit card required for the Free plan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I cancel?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can cancel anytime from the app settings. No contracts, no penalties. Your data stays safe and you can re-subscribe whenever you want.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="download">
+    <section class="section cta-section">
         <div class="container">
-            <h2>Abhi Shuru Karein!</h2>
-            <p>Free trial available hai. Koi credit card nahi chahiye.</p>
-            <div class="cta-buttons">
-                <a href="https://wa.me/923337948969?text=Software%20banwane%20ke%20liye%20rabta%20karen" class="btn btn-primary btn-large">Free Trial Start Karein</a>
-                <a href="https://wa.me/923337948969" class="btn btn-secondary">WhatsApp: +92 333 7948969</a>
+            <div class="cta-content">
+                <h2>Ready to Take Control of Your Business?</h2>
+                <p>Join 500+ businesses using BILLO to bill faster, track smarter, and grow bigger.</p>
+                <div class="cta-buttons">
+                    <a href="#app" class="btn btn-white btn-lg">
+                        Start Free — No Card Needed
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="mailto:support@billo.app" class="btn btn-ghost-white btn-lg">
+                        Contact Support
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>BILLO</h3>
-                    <p>Business Buddy - Pakistan ka apna POS system</p>
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">B</span>
+                        <span class="logo-text">BILLO</span>
+                    </a>
+                    <p class="footer-tagline">Business Buddy — The smart POS system for modern businesses.</p>
+                    <div class="footer-social">
+                        <a href="mailto:support@billo.app" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <a href="https://twitter.com/billoapp" target="_blank" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Product</h4>
                     <a href="#features">Features</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#faq">FAQ</a>
+                    <a href="#app">Install App</a>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <a href="https://wa.me/923337948969">WhatsApp</a>
-                    <a href="mailto:contact@billo.app">Email</a>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="mailto:support@billo.app">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Status</a>
+                    <a href="mailto:support@billo.app">Email Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 BILLO. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>

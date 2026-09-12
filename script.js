@@ -296,3 +296,74 @@ if (menuToggle && menuContent) {
         }
     });
 }
+
+// Notify Me
+function notifyMe() {
+    const input = document.querySelector('.notify-input');
+    const val = input?.value?.trim();
+    if (!val) { input?.focus(); return; }
+    const btn = document.querySelector('.notify-btn');
+    btn.textContent = 'Noted!';
+    btn.style.background = '#00B894';
+    input.value = '';
+    setTimeout(() => { btn.textContent = 'Notify Me'; btn.style.background = ''; }, 2000);
+}
+
+// PWA Install
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+const installSteps = document.getElementById('installSteps');
+
+window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'inline-flex';
+});
+
+if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                installBtn.textContent = 'Installed!';
+                installSteps.textContent = '';
+            }
+            deferredPrompt = null;
+        } else {
+            // iOS or not supported — show manual steps
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            installSteps.textContent = isIOS
+                ? 'Tap Share > Add to Home Screen'
+                : 'Tap menu (3 dots) > Install App / Add to Home Screen';
+        }
+    });
+}
+
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+}
+
+// Pricing Toggle
+const pricingToggle = document.getElementById('pricingToggle');
+const toggleLabels = document.querySelectorAll('.toggle-label');
+const priceAmounts = document.querySelectorAll('.amount[data-monthly]');
+
+if (pricingToggle) {
+    let isYearly = false;
+    pricingToggle.addEventListener('click', () => {
+        isYearly = !isYearly;
+        pricingToggle.classList.toggle('active', isYearly);
+        toggleLabels.forEach(l => {
+            l.classList.toggle('active', (l.dataset.period === 'yearly') === isYearly);
+        });
+        priceAmounts.forEach(el => {
+            el.textContent = isYearly ? el.dataset.yearly : el.dataset.monthly;
+        });
+        document.querySelectorAll('.pricing-price .period').forEach(p => {
+            if (p.textContent.includes('year')) return;
+            p.textContent = isYearly ? '/month (billed yearly)' : '/month';
+        });
+    });
+}
